@@ -5,6 +5,8 @@ import { FaRegFolder } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeInOut } from "../../animation";
 import "./menu.scss";
+import FlipLink from "../FlipLink/FlipLink";
+
 
 function Menu(props) {
   const [show, setShow] = useState(false);
@@ -38,7 +40,7 @@ function Menu(props) {
           >
             {/* off canvas Header */}
             <Offcanvas.Header>
-              <div className="navLogo">
+              <div className="nav-Logo">
                 <Link onClick={handleClose} to="/">
                   MNZ
                 </Link>
@@ -48,11 +50,17 @@ function Menu(props) {
                 initial="hidden"
                 animate="show"
                 exit="exit"
-              ></motion.div>
-              <FaRegFolder onClick={handleClose} size={30} />
+                variants={fadeInOut}
+              >
+                <FaRegFolder onClick={handleClose} size={30} />
+              </motion.div>
             </Offcanvas.Header>
             {/* off canvas body */}
-            <Offcanvas.Body>body</Offcanvas.Body>
+            <Offcanvas.Body>
+              <FlipLink onClick={handleClose} href="/About">
+                About
+              </FlipLink>
+            </Offcanvas.Body>
           </Offcanvas>
         </motion.div>
       </Container>

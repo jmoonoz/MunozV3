@@ -30,4 +30,9 @@
     align-items: center;
     justify-content: space-between;
   }
+  .offcanvas-body {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+  }
 }

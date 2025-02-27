@@ -7,7 +7,6 @@ import { fadeInOut } from "../../animation";
 import "./menu.scss";
 import FlipLink from "../FlipLink/FlipLink";
 
-
 function Menu(props) {
   const [show, setShow] = useState(false);
 
@@ -59,6 +58,12 @@ function Menu(props) {
             <Offcanvas.Body>
               <FlipLink onClick={handleClose} href="/About">
                 About
+              </FlipLink>
+              <FlipLink onClick={handleClose} href="/Contact">
+                Contact
+              </FlipLink>
+              <FlipLink onClick={handleClose} href="/Projects">
+                Projects
               </FlipLink>
             </Offcanvas.Body>
           </Offcanvas>

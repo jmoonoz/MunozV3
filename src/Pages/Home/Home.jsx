@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
-import "./home.scss";
 import { slideUp } from "../../animation";
+import "./home.scss";
 
 function Home() {
   const DURATION = 1.8;
@@ -40,7 +40,7 @@ function Home() {
                   }}
                   exit={{
                     y: "100%",
-                    rotate: "-9deg",
+                    rotate: "-15deg",
                     transition: {
                       duration: 0.4,
                       type: "spring",

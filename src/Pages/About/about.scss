@@ -1,0 +1,22 @@
+.about {
+  letter-spacing: 0.01em;
+  .colAlign {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .secTitle,
+  .techList {
+    // font-weight: 600;
+    text-transform: uppercase;
+    // font-size: 16px;
+    letter-spacing: 2px;
+  }
+  .sectionText {
+    font-weight: 200;
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}

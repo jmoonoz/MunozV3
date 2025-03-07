@@ -54,7 +54,7 @@ const TiltShineCard = () => {
 
   return (
     <motion.div
-      initial={{ y: 100, opacity: 0 }}
+      initial={{ y: 200, opacity: 0 }}
       animate={{
         opacity: 1,
         y: 0,

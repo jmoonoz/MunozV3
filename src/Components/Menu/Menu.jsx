@@ -65,6 +65,9 @@ function Menu(props) {
               <FlipLink onClick={handleClose} href="/Projects">
                 Projects
               </FlipLink>
+              <FlipLink onClick={handleClose} href="/Moonoz">
+                Moonoz
+              </FlipLink>
             </Offcanvas.Body>
           </Offcanvas>
         </motion.div>

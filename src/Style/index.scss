@@ -51,10 +51,14 @@ body::-webkit-scrollbar,
   display: none !important;
 }
 
-.home, .about {
+.home,
+.about,
+.project,
+.moonoz,
+.contact {
   margin: auto;
   overflow: hidden;
   padding-top: 15%;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }

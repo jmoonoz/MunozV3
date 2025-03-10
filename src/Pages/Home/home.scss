@@ -1,4 +1,12 @@
 .home {
+  .hero-Me {
+    position: fixed;
+    left: 25%;
+    bottom: 0;
+    opacity: 80%;
+    height: 90%;
+    z-index: -1;
+  }
     .hero-Title {
         display: flex;
         align-items: center;

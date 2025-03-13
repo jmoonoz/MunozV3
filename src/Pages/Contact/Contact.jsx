@@ -5,6 +5,10 @@ import emailjs from "@emailjs/browser";
 import { slideUp } from "../../animation";
 import "./contact.scss";
 
+const service = import.meta.env.VITE_SERVICE_ID;
+const template = import.meta.env.VITE_TEMPLATE_ID;
+const public_key = import.meta.env.VITE_PUBLIC_ID;
+
 function Contact(props) {
   const [validated, setValidated] = useState(false);
 

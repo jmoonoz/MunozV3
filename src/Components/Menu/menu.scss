@@ -36,5 +36,12 @@
     display: flex;
     gap: 8px;
     flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .menu-Bottom-Link{
+    display: flex;
+    flex-direction: column;
+    
   }
 }

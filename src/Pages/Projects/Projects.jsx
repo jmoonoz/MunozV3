@@ -3,7 +3,7 @@ import "./project.scss";
 import { Container } from "react-bootstrap";
 
 function Projects(props) {
-  return <Container>projects</Container>;
+  return <Container className="project">projects</Container>;
 }
 
 export default Projects;

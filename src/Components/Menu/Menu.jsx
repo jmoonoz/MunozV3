@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { fadeInOut } from "../../animation";
 import "./menu.scss";
 import FlipLink from "../FlipLink/FlipLink";
+import SocialLink from "../SocialLink/SocialLink";
 
 function Menu(props) {
   const [show, setShow] = useState(false);
@@ -56,18 +57,28 @@ function Menu(props) {
             </Offcanvas.Header>
             {/* off canvas body */}
             <Offcanvas.Body>
-              <FlipLink onClick={handleClose} href="/About">
-                About
-              </FlipLink>
-              <FlipLink onClick={handleClose} href="/Contact">
-                Contact
-              </FlipLink>
-              <FlipLink onClick={handleClose} href="/Projects">
-                Projects
-              </FlipLink>
-              <FlipLink onClick={handleClose} href="/Moonoz">
-                Moonoz
-              </FlipLink>
+              <div>
+                <FlipLink onClick={handleClose} href="/About">
+                  About
+                </FlipLink>
+                <FlipLink onClick={handleClose} href="/Contact">
+                  Contact
+                </FlipLink>
+                <FlipLink onClick={handleClose} href="/Projects">
+                  Projects
+                </FlipLink>
+                <FlipLink onClick={handleClose} href="/Moonoz">
+                  Moonoz
+                </FlipLink>
+              </div>
+              <div className="menu-Bottom-Link">
+                <SocialLink link="https://www.linkedin.com/in/moonoz/">
+                  Linkedin
+                </SocialLink>
+                <SocialLink link="https://github.com/jmoonoz">
+                  GitHub
+                </SocialLink>
+              </div>
             </Offcanvas.Body>
           </Offcanvas>
         </motion.div>

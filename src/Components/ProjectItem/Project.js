@@ -34,7 +34,7 @@ const projects = [
     projectLink: "https://www.gonz9training.com/",
     linkName: "Gonz9training",
     img: gonz9,
-    tools: ["wix", "photoshop", "lightroom"],
+    tools: ["wix", "photoshop", "lightroom "],
   },
   {
     id: uuidv4(),

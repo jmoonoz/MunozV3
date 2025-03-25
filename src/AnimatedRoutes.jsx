@@ -7,11 +7,13 @@ import Contact from "./Pages/Contact/Contact";
 import Moonoz from "./Pages/Moonoz/Moonoz";
 import Error from "./Pages/Error/Error";
 import Projects from "./Pages/Projects/Projects";
+import Menu from "./Components/Menu/Menu";
 
 function AnimatedRoutes() {
   const location = useLocation();
   return (
     <AnimatePresence mode="wait">
+      <Menu />
       <Routes key={location.pathname} location={location}>
         <Route path="/" element={<Home />}></Route>
         <Route path="*" element={<Error />}></Route>

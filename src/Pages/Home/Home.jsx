@@ -5,6 +5,7 @@ import { slideUp } from "../../animation";
 import Munoz from "../../Images/mexicoHat.png"
 import { imgFadein } from "../../animation";
 import "./home.scss";
+import SideCanvas from "../../Components/SideCanvas/SideCanvas";
 
 function Home() {
   const DURATION = 1.8;
@@ -26,6 +27,7 @@ function Home() {
       <Container>
         <Row>
           <Col>
+          <SideCanvas></SideCanvas>
             <div className="hero-Title">
               {lastName.split("").map((l, i) => (
                 <motion.span

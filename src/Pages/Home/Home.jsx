@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { slideUp } from "../../animation";
-import Munoz from "../../Images/mexicoHat.png"
+import Munoz from "../../Images/mexicoHat.png";
 import { imgFadein } from "../../animation";
 import "./home.scss";
 import SideCanvas from "../../Components/SideCanvas/SideCanvas";
@@ -27,7 +27,6 @@ function Home() {
       <Container>
         <Row>
           <Col>
-          <SideCanvas></SideCanvas>
             <div className="hero-Title">
               {lastName.split("").map((l, i) => (
                 <motion.span

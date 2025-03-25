@@ -45,7 +45,7 @@ body {
   }
 }
 
-body::-webkit-scrollbar,
+::-webkit-scrollbar,
 .section-style::-webkit-scrollbar,
 .container::-webkit-scrollbar {
   display: none !important;
@@ -61,4 +61,14 @@ body::-webkit-scrollbar,
   padding-top: 15%;
   height: 100vh;
   width: 100vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .home,
+  .about,
+  .project,
+  .moonoz,
+  .contact {
+    overflow: scroll;
+  }
 }

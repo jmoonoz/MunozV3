@@ -7,21 +7,21 @@
     height: 90%;
     z-index: -1;
   }
-    .hero-Title {
-        display: flex;
-        align-items: center;
-        color: var(--white-text);
-        justify-content: center;
-        overflow: hidden;
-        font-family: "proxima";
-        height: 290px;
-        span {
-          font-size: 250px;
-          font-weight: 900;
-          text-transform: uppercase;
-        }
-      }
-    
+  .hero-Title {
+    display: flex;
+    align-items: center;
+    color: var(--white-text);
+    justify-content: center;
+    overflow: hidden;
+    font-family: "proxima";
+    height: 290px;
+    span {
+      font-size: 250px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+  }
+
   .home-Desc {
     display: flex !important;
     flex-direction: row !important;
@@ -38,9 +38,31 @@
       div {
         font-style: italic !important;
         overflow: hidden;
-          div {
-            padding-right: 2px;
-          }
+        div {
+          padding-right: 2px;
+        }
+      }
+    }
+  }
+}
+
+// ****************************
+//
+// Mobile size
+//
+// ****************************
+
+@media only screen and (max-width: 600px) {
+  .home {
+    .hero-Me{
+      left: 0%;
+      height: 70%;
+
+    }
+    .hero-Title {
+      height: 130px;
+      span {
+        font-size: 120px !important;
       }
     }
   }

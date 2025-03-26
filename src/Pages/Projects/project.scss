@@ -5,3 +5,21 @@
     gap: 5rem;
   }
 }
+
+// ****************************
+//
+// Mobile size
+//
+// ****************************
+
+@media only screen and (max-width: 600px) {
+  .project {
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 48px,
+      black calc(100% - 48px),
+      transparent 100%
+    );
+  }
+}

@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 
 function Moonoz(props) {
     return (
-        <Container>
+        <Container className='moonoz'>
             Moonoz
         </Container>
     );

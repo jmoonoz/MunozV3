@@ -52,12 +52,17 @@
 //
 // ****************************
 
+@media only screen and (max-width: 400px) {
+  .home .hero-Title span {
+    font-size: 110px !important ;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .home {
-    .hero-Me{
+    .hero-Me {
       left: 0%;
       height: 70%;
-
     }
     .hero-Title {
       height: 130px;

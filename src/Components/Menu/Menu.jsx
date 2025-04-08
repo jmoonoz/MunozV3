@@ -28,25 +28,33 @@ function Menu(props) {
             <Link to="/">MNZ</Link>
           </motion.div>
           {/* folder button */}
-          <motion.div variants={fadeInOut}>
-            <FaRegFolder onClick={handleShow} size={30} />
-          </motion.div>
+          <Navbar.Toggle aria-controls="basic-navbar-nav">
+            <motion.div variants={fadeInOut}>
+              <FaRegFolder onClick={handleShow} size={30} />
+            </motion.div>
+          </Navbar.Toggle>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <FlipLink href="/About">
+              About
+            </FlipLink>
+          </Navbar.Collapse>
+
           {/* off canvas */}
-          <Offcanvas
+          {/* <Offcanvas
             className="off-Canvas-Nav"
             placement="end"
             show={show}
             onHide={handleClose}
-          >
-            {/* off canvas Header */}
-            <Offcanvas.Header>
+          > */}
+          {/* off canvas Header */}
+          {/* <Offcanvas.Header>
               <div className="nav-Logo">
                 <Link onClick={handleClose} to="/">
                   MNZ
                 </Link>
-              </div>
-              {/* close button */}
-              <motion.div
+              </div> */}
+          {/* close button */}
+          {/* <motion.div
                 initial="hidden"
                 animate="show"
                 exit="exit"
@@ -54,9 +62,9 @@ function Menu(props) {
               >
                 <FaRegFolder onClick={handleClose} size={30} />
               </motion.div>
-            </Offcanvas.Header>
-            {/* off canvas body */}
-            <Offcanvas.Body>
+            </Offcanvas.Header> */}
+          {/* off canvas body */}
+          {/* <Offcanvas.Body>
               <div>
                 <FlipLink onClick={handleClose} href="/About">
                   About
@@ -80,7 +88,7 @@ function Menu(props) {
                 </SocialLink>
               </div>
             </Offcanvas.Body>
-          </Offcanvas>
+          </Offcanvas> */}
         </motion.div>
       </Container>
     </Navbar>

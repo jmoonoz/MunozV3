@@ -53,12 +53,21 @@
 // ****************************
 
 @media only screen and (max-width: 400px) {
-  .home .hero-Title span {
-    font-size: 110px !important ;
+  .home {
+    .hero-Me {
+      left: 0%;
+      height: 70%;
+    }
+    .hero-Title {
+      height: 130px;
+      span {
+        font-size: 100px !important;
+      }
+    }
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .home {
     .hero-Me {
       left: 0%;

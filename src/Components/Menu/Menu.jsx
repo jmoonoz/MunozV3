@@ -33,11 +33,13 @@ function Menu(props) {
               <FaRegFolder onClick={handleShow} size={30} />
             </motion.div>
           </Navbar.Toggle>
-          <Navbar.Collapse id="basic-navbar-nav">
-            <FlipLink href="/About">
-              About
-            </FlipLink>
-          </Navbar.Collapse>
+          <div>
+            <Navbar.Collapse id="basic-navbar-nav">
+              <FlipLink href="/About">About</FlipLink>
+              <FlipLink href="/Contact">Contact</FlipLink>
+              <FlipLink href="/Projects">Projects</FlipLink>
+            </Navbar.Collapse>
+          </div>
 
           {/* off canvas */}
           {/* <Offcanvas
